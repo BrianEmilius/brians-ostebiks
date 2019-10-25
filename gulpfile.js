@@ -90,10 +90,10 @@ gulp.task("dev", function(done) {
 });
 
 gulp.task("build", function(done) {
-	html();
-	scss();
-	javascript();
-	json();
-	images();
+	html(next);
+	scss(next);
+	javascript(next);
+	json(next);
+	images(next);
 	done();
 });
